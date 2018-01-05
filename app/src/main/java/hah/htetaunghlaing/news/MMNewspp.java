@@ -7,4 +7,6 @@ import android.app.Application;
  */
 
 public class MMNewspp extends Application {
+
+    public static final String LOG_TAG = "MMNewspp";
 }
