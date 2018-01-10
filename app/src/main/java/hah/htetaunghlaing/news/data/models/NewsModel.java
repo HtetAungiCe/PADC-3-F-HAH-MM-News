@@ -2,19 +2,26 @@ package hah.htetaunghlaing.news.data.models;
 
 import hah.htetaunghlaing.news.network.HttpUrlConnectionDataAgent;
 import hah.htetaunghlaing.news.network.NewsDataAgent;
+import hah.htetaunghlaing.news.network.OkHttpDataAgent;
+import hah.htetaunghlaing.news.network.RetrofitDataAgent;
 
 /**
  * Created by Htet Aung Hlaing on 12/23/2017.
  */
 
 public class NewsModel {
+
     private static NewsModel sObjectInstance;
 
     private NewsDataAgent nDataAgent;
 
     private NewsModel(){
 
-        nDataAgent= HttpUrlConnectionDataAgent.getsObjInstance();
+    //   nDataAgent = HttpUrlConnectionDataAgent.getsObjInstance();
+
+       // nDataAgent = OkHttpDataAgent.getObjInstance();
+
+        nDataAgent = RetrofitDataAgent.getObjInstance();
 
     }
     public static NewsModel getsObjectInstance(){
