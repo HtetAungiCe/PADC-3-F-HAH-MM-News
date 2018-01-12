@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_international_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#F80000">
+
+            <TextView
+                android:id="@+id/live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/ic_brightness_1_black_24dp"
+                android:text="@string/live"
+                android:textColor="@color/white_full"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_news_breif_inter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/live"
+                android:lineSpacingMultiplier="1"
+                android:text="@string/breif_inter"
+                android:textColor="@color/white_full" />
+
+            <TextView
+                android:id="@+id/time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/live"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:drawableLeft="@drawable/ic_access_time_white_24dp"
+                android:text="19m  | "
+                android:textColor="@color/white_full"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/message_inter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_toRightOf="@+id/time1"
+                android:drawableLeft="@drawable/ic_mode_comment_black_24dp"
+                android:text="788"
+                android:textColor="@color/white_full"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_nuclear"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/nuclearimage"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Us to Lossen and develop more useable weheads.Us to Lossen and develop more useable weheads."
+            android:textSize="16dp"
+            android:lineSpacingMultiplier="1"
+            android:layout_margin="4dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/black_full"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_international_news_item"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
